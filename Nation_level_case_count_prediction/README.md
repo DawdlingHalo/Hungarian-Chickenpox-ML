@@ -12,3 +12,9 @@ Simple_methods file includes the hardcode methods earlier used to forecast value
 Since we are using MeanAbsoluteError(MAE) as our metric, so the model with least amount of MAE is the best model.
 
 In the file above , we conclude that **170.4** is the best score we can get with the amount of data we presently have.
+
+# Basic_ML_methods
+
+In this file , we have implemented basic Dense layer Sequential Machine Learning models to build a model that can outperform simple_methods and can predict the future values. 
+
+After implementing 2 models , we find that the best score that has been achieved with these models is **174.74289**. Next , we will be seeing how the RNN and LSTM models perform on a small dataset of Hungarian chickenpox.
