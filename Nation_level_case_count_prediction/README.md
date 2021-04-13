@@ -1,5 +1,5 @@
 # Nation level case count prediction
-Since we are doing nation level, so we only require one series. This means we total the cases from all counties into a single column. 
+Since we are doing nation level, so we only require one series. This means we total the cases from all counties into a single column. Upon observing the graph , we can conclude that we have a trend statinoary dataset . This means that time series does not exhibit a trend. 
 
 All the cases of a particular date have been summed to generate a single value.
 
