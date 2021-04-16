@@ -18,3 +18,7 @@ In the file above , we conclude that **170.4** is the best score we can get with
 In this file , we have implemented basic Dense layer Sequential Machine Learning models to build a model that can outperform simple_methods and can predict the future values. 
 
 After implementing 2 models , we find that the best score that has been achieved with these models is **174.74289**. Next , we will be seeing how the RNN and LSTM models perform on a small dataset of Hungarian chickenpox.
+
+# Simple_RNN_LSTM
+
+We have applied dataset on RNN and LSTM models. Their score however is not much promising and was not able beat or come close to the baseline of Naive Forecasting. One of the reasons why it did not provide good results is because of size of data. Due to its short size , the model finds difficulty in finding patterns.
