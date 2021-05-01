@@ -1,6 +1,7 @@
 # Nation level case count prediction
 Since we are doing nation level, so we only require one series. This means we total the cases from all counties into a single column. Upon observing the graph , we can conclude that we have a trend statinoary dataset . This means that time series does not exhibit a trend. 
 
+The data is seasonal and we can conclude it is stationary in nature.
 All the cases of a particular date have been summed to generate a single value.
 
 ---
@@ -36,3 +37,8 @@ We have applied here 2 Convolutional models. First is, applying convolutional la
 We don't observe much difference from First model used in this file and the best model we were able to extract from Simple RNN LSTM . 
 
 The second model, speaks volumes about the power of convolutional network in time series forecasting. We were able to get a very good score of **150.611** which is the best model we have been able to train for the given dataset. The Wavenet architecture we used here learns short term patterns in lower layers and long term patterns in higher layers.
+
+# ARIMA 
+Since the data provided is seasonal only , we attempted to fit this model on our dataset. However , ARIMA gave so much error about mean absolute error that it wasn't able to compete with Naive forecasting method. It gave mean absolute error of **293.125**.
+
+AutoRegressive Integrated Moving Average (ARIMA) cannot handle outliers which are present in our dataset. The small size also plays a role in acheiving the best model. We also observe presence of bias because of non-zero mean in residuals. 
