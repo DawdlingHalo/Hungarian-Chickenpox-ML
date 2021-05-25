@@ -38,7 +38,28 @@ We don't observe much difference from First model used in this file and the best
 
 The second model, speaks volumes about the power of convolutional network in time series forecasting. We were able to get a very good score of **150.611** which is the best model we have been able to train for the given dataset. The Wavenet architecture we used here learns short term patterns in lower layers and long term patterns in higher layers.
 
+---
+
 # ARIMA 
 Since the data provided is seasonal only , we attempted to fit this model on our dataset. However , ARIMA gave so much error about mean absolute error that it wasn't able to compete with Naive forecasting method. It gave mean absolute error of **293.125**.
 
 AutoRegressive Integrated Moving Average (ARIMA) cannot handle outliers which are present in our dataset. The small size also plays a role in acheiving the best model. We also observe presence of bias because of non-zero mean in residuals. 
+
+---
+# Conclusion
+For nation level case count prediction , we started with simple methods where naive forecasting generated a baseline score which turned out to be ***mean absolute error*** of ***181***. Then we turned to other simple methods .
+
+The next step involved implementing machine learning models. The machine learning models we covered are :
+1. Linear Regression Model
+2. Dense model with multiple layers
+
+We went a step further and used different neural network models and architechtures, namely :
+1. Simple RNN model ( both s2s and s2v)
+2. Stateful RNN model
+3. LSTM model
+4. Model with single 1-D convolutional layer for preprocessing 
+5. Fully Convolutional Network
+
+ARIMA model was also tested , however , it was not able to provide the results which could compete with result we achieved from CNN model. Particularly, ***Fully Convolutional Network***, which gave us ***mean absolute score of approximately 150***. 
+
+In conclusion , the best model generated for this dataset , considering its short size , is Fully Convolutional Network.
